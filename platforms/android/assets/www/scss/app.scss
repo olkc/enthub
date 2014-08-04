@@ -1,0 +1,335 @@
+////////////////////////////////////////////////////////
+/*variables changes*/
+
+$header-background-color: #222;
+$header-font-color: #FFF;
+$att-lightblue: #3aa5dc;
+$att-darkblue: #067ab4;
+$att-lightorange: #fcb314;
+$att-darkorange: #ff7200;
+$background-color: #333;
+$background-color-lighter: #555;
+
+// Overwrite Ionic Variables
+$dark: #222 !default;
+////////////////////////////////////////////////////////
+
+
+/*import ionic*/
+@import "../lib/ionic/scss/ionic";
+
+// editing the header background
+#header
+{
+    background: $header-background-color;
+}
+
+// editing things for the header
+ion-view
+{
+    ion-content 
+    {
+        background: $background-color;
+        h1, h2
+        {
+            color: $att-lightblue;
+            text-align: center;
+        }
+        p {
+            color: silver;
+            text-align: center;
+        }
+        .row
+        {
+            border: 2px solid;
+            border-radius: 25px;
+            border-color: #FFF;
+            padding: 2%px;
+            //margin-left: 10%;
+            //margin-right: 10%;
+            margin: auto;
+            margin-bottom: 5%;
+            width: 75%;
+            .one
+            {
+                background: $background-color-lighter;
+                background-image: url('../img/seat_icon__orange_favorite.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1% solid;
+                border-radius: 50px;
+                border-color: transparent;
+                padding: 1%;
+                margin: 1%;
+            }
+            .two
+            {
+                background: $background-color-lighter;
+                background-image: url('../img/seat_icon__orange_favorite.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1% solid;
+                border-radius: 50px;
+                border-color: transparent;
+                padding: 1%;
+                margin: 1%;
+            }
+            .three
+            {
+                background: $background-color-lighter;
+                background-image: url('../img/seat_icon__orange_favorite.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1% solid;
+                border-radius: 50px;
+                border-color: transparent;
+                padding: 1%;
+                margin: 1%;
+            }
+        }
+    }
+}
+
+.bar 
+{
+    box-shadow: 0px 0px 2px #ddd inset;
+    //border-bottom-color: transparent;
+    //border-bottom: none;
+    //flex-wrap: wrap;
+    .title
+    {
+        color: $header-font-color;
+    
+    }
+}
+
+ion-tabs
+{
+    padding: none;
+}
+
+////////////////////////////////////////////////////////
+/* The original icons (used as tests) */
+.attblue {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('../img/att-blue.png');
+}
+
+.attpurple {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('../img/att-purple.png');
+}
+
+.attorange {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('../img/att-orange.png');
+}
+
+.attgray {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('../img/att.png');
+}
+
+.seatfavorite {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/seat_icon__orange_favorite.png');
+}
+////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////
+/* SIDE MENU*/
+ion-side-menu 
+{
+    header
+    {
+    background: $background-color;
+    }
+    ion-content
+    {
+        background-color: $background-color-lighter;
+
+        .scroll
+        {
+            color: white;
+            background: $background-color-lighter;
+        }
+    }
+    .item
+    {
+          background-color: transparent;
+        border: none;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    border-color: gray;
+    color: white;
+    }
+}
+
+// Override ionic's defaults
+/*Ion-item adds item-complex and an inner div, .item-content
+  this needs to be transparent too, but doesnt need borders*/
+ion-side-menu .item-complex .item-content, .mymenu .item-radio .item-content {
+  background-color: transparent;
+}
+////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////
+/* The home screen buttons */
+#homebuttons
+{
+    text-align:  center;
+    padding: 1%;
+    margin-top: 10%;
+}
+
+#musicbtn
+{
+    background-image: url('../img/music.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+}
+
+#restaurantsbtn
+{
+    background-image: url('../img/restaurants.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+}
+
+#entertainmentbtn
+{
+    background-image: url('../img/entertainment.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 75px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#hotelsbtn
+{
+    background-image: url('../img/hotels.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 100px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+}
+
+#nightlifebtn
+{
+    background-image: url('../img/nightlife.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 100px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+}
+////////////////////////////////////////////////////////
+
+
+ion-view ion-content #alertbtn
+{
+    text-align: center;
+}
+
+.hotelsTab
+{
+    background-image: url('../img/hotelstab.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 100px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+}
+
+.hotelsTabOff
+{
+    background-image: url('../img/hotelstaboff.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 100px;
+    border-color: white;
+    border: 2px 2px solid;
+    padding: 1%;
+}
+
+ion-view ion-content ion-item #friendslist
+{
+    background: black;
+    color: green;
+}
+
+ion-view ion-content #friendslist .item .item-content, .my-menu .item-complex{
+background-color: rgba(0,0,0,0);
+color: #FFFFFF;
+}
+
+
+ion-view
+{
+    ion-content
+    {
+        background-color: $background-color-lighter;
+
+        #friendslist
+        {
+            color: white;
+            background: green;
+        }
+    }
+    #friendslist
+    {
+        #addfriendbtn
+        {
+            float: inherit;
+        }
+        #deletefriendbtn
+        {
+            float: right;
+        }
+        h4
+        {
+            color:silver;
+            text-align:center;
+            padding-bottom: 2%;
+        }
+        .item
+        {
+            background-color: transparent;
+            border: none;
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            border-color: gray;
+            color: white;
+        }
+    }
+}

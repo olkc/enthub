@@ -1,0 +1,20 @@
+<ion-view title="Home">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+      <h2>Welcome {{ user }}!</h2>
+      <p>Click on a button below to compare your interests with<br />your some of your coworkers' interests!</p>
+
+      <div id="homebuttons">
+          <button class="button button-positive" id="musicbtn" type="submit" ng-click="musicClicked();"></button>
+          <button class="button button-positive" id="restaurantsbtn" ng-click="restaurantsClicked();"></button>
+          <br />
+          <button class="button button-positive" id="entertainmentbtn" ng-click="entertainmentClicked();"></button>
+          <br />
+          <button class="button button-positive" id="hotelsbtn" ng-click="hotelsClicked();"></button>
+          <button class="button button-positive" id="nightlifebtn" ng-click="nightlifeClicked();"></button>
+      </div>
+
+  </ion-content>
+</ion-view>
